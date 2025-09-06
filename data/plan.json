@@ -1,4 +1,40 @@
 {
-  "nombre": "Terapia Oxidación",
-  "preparacion": ["cremas", "aislamiento"]
+  "nombre": "Plan Nutricional y Terapias",
+  "pre_digestivos": {
+    "titulo": "PRE DIGESTIVOS OLIGOELEMENTOS",
+    "descripcion": "El pre digestivo tiene una función super importante para tu sistema digestivo y inmune, no te lo puedes saltar. Vamos a abordar la digestión a través de este plan nutricional apropiado. Si necesitamos más ayudas podemos evaluar según sea necesario, pero mucho de esto debe lograrse ajustando la comida. Avíseme si siente molestias después de una comida, hinchazón, gas constante, etc."
+  },
+  "terapia_oxidacion": {
+    "titulo": "TERAPIA OXIDACIÓN",
+    "descripcion": "Fragmento en ayunas / hormonal secado – 0,10 unidades pre cardio / pre workout.",
+    "items": [
+      {
+        "nombre": "Eutirox 100 mcg",
+        "instruccion": "Tomar en ayunas"
+      },
+      {
+        "nombre": "Menformina 850 mg",
+        "instruccion": "Tomar antes de dormir"
+      },
+      {
+        "nombre": "Soporte Sleep",
+        "instruccion": "Ashwagandha + Magnesio antes de dormir"
+      }
+    ]
+  },
+  "ciclo_thermo_oxidacion": {
+    "titulo": "CICLO THERMO OXIDACIÓN",
+    "descripcion": "Tomar pre cardio / pre workout.",
+    "items": [
+      {
+        "nombre": "Clembuterol",
+        "instruccion": "0,60 mcg"
+      },
+      {
+        "nombre": "Carnitina",
+        "instruccion": "3 g"
+      }
+    ],
+    "soporte_sleep": "Ashwagandha + Aldaltone 25 mg + Magnesio antes de dormir"
+  }
 }
