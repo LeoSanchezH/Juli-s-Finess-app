@@ -94,25 +94,61 @@ function createExerciseItem(item) {
   });
 
   // PLAN
-  const plan = await loadJSON('/data/plan.json');
-  setText('plan-nombre', plan.nombre);
-  renderList('plan-preparacion', plan.preparacion || []);
+const plan = await loadJSON('data/plan.json'); // ojo: usa ruta relativa en GitHub Pages
+const planC = document.getElementById('plan-preparacion');
+if (planC) {
+  planC.innerHTML = '';
 
-  // LAB
-  const lab = await loadJSON('/data/lab.json');
-  const labC = document.getElementById('lab-resultados');
-  if (labC) {
-    labC.innerHTML = '';
-    (lab.resultados || []).forEach((r) => {
-      const card = document.createElement('div');
-      card.className =
-        'rounded-xl border border-slate-800 bg-slate-800/60 p-3';
-      card.innerHTML = `<p class='font-medium'>${r.nombre}</p>
-        <p class='text-sm text-slate-300'>${r.valor}</p>
-        <p class='text-xs text-slate-400'>${r.fecha}</p>`;
-      labC.appendChild(card);
-    });
+  // Render bloque genérico
+  function renderBlock(data) {
+    if (!data) return null;
+    const block = document.createElement('div');
+    block.className = 'rounded-xl border border-slate-800 bg-slate-800/60 p-4 mb-3';
+
+    const title = document.createElement('p');
+    title.className = 'font-medium mb-1';
+    title.textContent = data.titulo || '';
+    block.appendChild(title);
+
+    if (data.descripcion) {
+      const desc = document.createElement('p');
+      desc.className = 'text-sm text-slate-300 mb-2';
+      desc.textContent = data.descripcion;
+      block.appendChild(desc);
+    }
+
+    if (data.items && Array.isArray(data.items)) {
+      const ul = document.createElement('ul');
+      ul.className = 'list-disc list-inside text-sm text-slate-300';
+      data.items.forEach(it => {
+        const li = document.createElement('li');
+        li.textContent = `${it.nombre}${it.instruccion ? ' — ' + it.instruccion : ''}`;
+        ul.appendChild(li);
+      });
+      block.appendChild(ul);
+    }
+
+    if (data.soporte_sleep) {
+      const s = document.createElement('p');
+      s.className = 'text-xs text-slate-400 mt-2';
+      s.textContent = `Soporte Sleep: ${data.soporte_sleep}`;
+      block.appendChild(s);
+    }
+
+    return block;
   }
+
+  // Insertar bloques
+  const blocks = [
+    plan.pre_digestivos,
+    plan.terapia_oxidacion,
+    plan.ciclo_thermo_oxidacion,
+  ];
+  blocks.forEach(b => {
+    const el = renderBlock(b);
+    if (el) planC.appendChild(el);
+  });
+}
 
   // NUTRICIÓN
   const nutrition = await loadJSON('/data/nutrition.json');
@@ -205,3 +241,4 @@ function createExerciseItem(item) {
   renderList('tips-alimentacion', tips.alimentacion || []);
   renderList('tips-acondicionamiento', tips.acondicionamiento || []);
 })();
+
