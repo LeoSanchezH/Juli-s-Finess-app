@@ -1,7 +1,26 @@
 {
-  "oxidantes": ["Eutirox", "Metformina", "Ashwagandha + Magnesio"],
-  "thermo_oxidacion": ["Clembuterol", "Carnitina", "Ashwagandha + Aldactone"],
-  "pre_entreno": ["Cafeína"],
-  "mid_entreno": ["Electrolitos"],
-  "post_entreno": ["Proteína whey", "Creatina"]
+  "oxidantes": [
+    "Eutirox",
+    "Metformina",
+    "Ashwagandha + Magnesio"
+  ],
+  "thermo_oxidacion": [
+    "Clembuterol",
+    "Carnitina",
+    "Ashwagandha + Aldactone"
+  ],
+  "pre_entreno": [
+    "10 rayas de Fragmento",
+    "5 g de Creatina",
+    "L-Carnitina",
+    "Clembuterol",
+    "1 g de Sodio (todos los entrenamientos)"
+  ],
+  "mid_entreno": [
+    "5 g de BCAA"
+  ],
+  "post_entreno": [
+    "20 g de Proteína ISOJET",
+    "5 g de Glutamina"
+  ]
 }

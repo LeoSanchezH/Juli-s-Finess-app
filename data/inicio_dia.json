@@ -1,0 +1,30 @@
+{
+  "titulo": "---- ASÍ COMENZAMOS EL DÍA ----",
+  "rutina": [
+    {
+      "bloque": "Preparación inicial",
+      "items": [
+        "Agregar una crema para quemar grasa localizada en la zona abs y parte baja de la espalda",
+        "Colocar vinipel negro y faja de neopreno para deshidratación de la zona",
+        "Colocar un buso o chaqueta térmica para poder elevar la temperatura corporal durante todo tu cardio"
+      ]
+    },
+    {
+      "bloque": "Ciclo de Cardio x2",
+      "items": [
+        "Cardio intenso en ayunas — 1 hora",
+        "Post workout — 20 min",
+        "Al terminar tu cardio: Tomar DETOX"
+      ],
+      "detox": [
+        "50 ml de pasillo de agua caliente",
+        "Medio limón exprimido",
+        "Vinagre de manzana (cidra) — 1 cc",
+        "Sal del Himalaya — pizca",
+        "Probiótico",
+        "1 Barberine"
+      ],
+      "nota": "Tomar todo junto!"
+    }
+  ]
+}

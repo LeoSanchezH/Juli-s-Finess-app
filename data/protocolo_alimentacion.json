@@ -1,0 +1,40 @@
+{
+  "titulo": "PROTOCOLO DE ALIMENTACIÓN",
+  "bloques": [
+    {
+      "nombre": "Ciclo Pre Digestivo",
+      "descripcion": "Función importante para la parte digestiva y funcionamiento del sistema y oxidación de grasa visceral"
+    },
+    {
+      "nombre": "Obligatorio",
+      "items": [
+        "Agua: 2L de agua hervida + 2 flor de Jamaica combinados durante el día",
+        "Sodio: 3 g de sal rosada distribuidos en las comidas (pesar el sodio en una gramera)"
+      ]
+    },
+    {
+      "nombre": "Oligoelementos",
+      "sub_bloques": [
+        {
+          "cuando": "Coctel-Comida 2 y 4",
+          "items": [
+            "Posillo de agua tibia",
+            "Copa de vinagre cidra",
+            "10 gotas propolio",
+            "1/2 limón",
+            "Glutamina 5 g"
+          ]
+        },
+        {
+          "cuando": "Coctel-Comida 3 y 5",
+          "items": [
+            "Enzimas esenciales",
+            "Cromium Picolinato",
+            "Omega 3 (1 g)",
+            "CoQ10"
+          ]
+        }
+      ]
+    }
+  ]
+}
