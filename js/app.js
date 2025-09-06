@@ -93,7 +93,66 @@ function createExerciseItem(item) {
     }
   });
 
-  // PLAN
+
+  //INICIO_DIA
+
+
+  const inicio = await loadJSON('data/inicio_dia.json');
+const inicioC = document.getElementById('inicio-dia');
+if (inicioC) {
+  inicioC.innerHTML = '';
+
+  const title = document.createElement('h2');
+  title.className = 'text-lg font-semibold mb-3';
+  title.textContent = inicio.titulo;
+  inicioC.appendChild(title);
+
+  (inicio.rutina || []).forEach(b => {
+    const block = document.createElement('div');
+    block.className = 'rounded-xl border border-slate-800 bg-slate-800/60 p-4 mb-4';
+
+    const bt = document.createElement('p');
+    bt.className = 'font-medium mb-2';
+    bt.textContent = b.bloque;
+    block.appendChild(bt);
+
+    const ul = document.createElement('ul');
+    ul.className = 'list-disc list-inside text-sm text-slate-300 mb-2';
+    (b.items || []).forEach(it => {
+      const li = document.createElement('li');
+      li.textContent = it;
+      ul.appendChild(li);
+    });
+    block.appendChild(ul);
+
+    if (b.detox) {
+      const detoxTitle = document.createElement('p');
+      detoxTitle.className = 'font-medium text-sky-400 mb-1';
+      detoxTitle.textContent = 'Detox';
+      block.appendChild(detoxTitle);
+
+      const ulDetox = document.createElement('ul');
+      ulDetox.className = 'list-disc list-inside text-sm text-slate-300 mb-2';
+      b.detox.forEach(d => {
+        const li = document.createElement('li');
+        li.textContent = d;
+        ulDetox.appendChild(li);
+      });
+      block.appendChild(ulDetox);
+    }
+
+    if (b.nota) {
+      const nota = document.createElement('p');
+      nota.className = 'text-xs text-slate-400 italic';
+      nota.textContent = b.nota;
+      block.appendChild(nota);
+    }
+
+    inicioC.appendChild(block);
+  });
+}
+
+// PLAN
 const plan = await loadJSON('data/plan.json'); // ojo: usa ruta relativa en GitHub Pages
 const planC = document.getElementById('plan-preparacion');
 if (planC) {
@@ -149,6 +208,94 @@ if (planC) {
     if (el) planC.appendChild(el);
   });
 }
+  // LAB
+  const lab = await loadJSON('/data/lab.json');
+  const labC = document.getElementById('lab-resultados');
+  if (labC) {
+    labC.innerHTML = '';
+    (lab.resultados || []).forEach((r) => {
+      const card = document.createElement('div');
+      card.className =
+        'rounded-xl border border-slate-800 bg-slate-800/60 p-3';
+      card.innerHTML = `<p class='font-medium'>${r.nombre}</p>
+        <p class='text-sm text-slate-300'>${r.valor}</p>
+        <p class='text-xs text-slate-400'>${r.fecha}</p>`;
+      labC.appendChild(card);
+    });
+  }
+
+  //PROTOCOLO
+
+  // PROTOCOLO DE ALIMENTACIÓN
+try {
+  const prot = await loadJSON('data/protocolo_alimentacion.json');
+  const root = document.getElementById('protocolo-alimentacion-content');
+  if (root) {
+    root.innerHTML = '';
+
+    const makeList = (arr, cls = 'list-disc list-inside text-sm text-slate-300') => {
+      const ul = document.createElement('ul');
+      ul.className = cls;
+      (arr || []).forEach((it) => {
+        const li = document.createElement('li');
+        li.textContent = it;
+        ul.appendChild(li);
+      });
+      return ul;
+    };
+
+    (prot.bloques || []).forEach((b) => {
+      const card = document.createElement('div');
+      card.className = 'rounded-xl border border-slate-800 bg-slate-800/60 p-4';
+
+      if (b.nombre) {
+        const title = document.createElement('p');
+        title.className = 'font-medium mb-1';
+        title.textContent = b.nombre;
+        card.appendChild(title);
+      }
+
+      if (b.descripcion) {
+        const desc = document.createElement('p');
+        desc.className = 'text-sm text-slate-300 mb-2';
+        desc.textContent = b.descripcion;
+        card.appendChild(desc);
+      }
+
+      if (b.items && Array.isArray(b.items)) {
+        card.appendChild(makeList(b.items));
+      }
+
+      if (b.sub_bloques && Array.isArray(b.sub_bloques)) {
+        const group = document.createElement('div');
+        group.className = 'grid gap-3 mt-2';
+        b.sub_bloques.forEach((sb) => {
+          const sbCard = document.createElement('div');
+          sbCard.className = 'rounded-lg border border-slate-800 bg-slate-900/40 p-3';
+
+          if (sb.cuando) {
+            const sbTitle = document.createElement('p');
+            sbTitle.className = 'text-sky-400 font-medium mb-1';
+            sbTitle.textContent = sb.cuando;
+            sbCard.appendChild(sbTitle);
+          }
+
+          if (sb.items) {
+            sbCard.appendChild(makeList(sb.items));
+          }
+
+          group.appendChild(sbCard);
+        });
+        card.appendChild(group);
+      }
+
+      root.appendChild(card);
+    });
+  }
+} catch (e) {
+  console.error('Error cargando protocolo_alimentacion:', e);
+}
+
 
   // NUTRICIÓN
   const nutrition = await loadJSON('/data/nutrition.json');
@@ -241,4 +388,3 @@ if (planC) {
   renderList('tips-alimentacion', tips.alimentacion || []);
   renderList('tips-acondicionamiento', tips.acondicionamiento || []);
 })();
-

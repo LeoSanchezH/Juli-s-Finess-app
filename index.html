@@ -28,10 +28,14 @@
         <a href="#perfil" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="user"></i> Perfil</a>
         <a href="#plan" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="clipboard"></i> Plan</a>
         <a href="#lab" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="activity"></i> Laboratorio</a>
+        <a href="#protocolo-alimentacion" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="target"></i> Protocolo</a>
+        <a href="#inicio-dia" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="sunrise"></i> Inicio del día
         <a href="#nutricion" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="coffee"></i> Nutrición</a>
         <a href="#suplementos" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="package"></i> Suplementos</a>
         <a href="#rutinas" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="heart"></i> Rutinas</a>
         <a href="#tips" class="flex items-center gap-1 text-slate-300 hover:text-sky-400 transition"><i data-feather="info"></i> Tips</a>
+        
+</a>
       </nav>
     </div>
   </header>
@@ -63,8 +67,8 @@
     </section>
 
     <!-- PLAN -->
-    <section id="plan" class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md">
-      <div class="flex items-center gap-2 mb-2">
+    <section id="plan" class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md ">
+      <div class="flex items-center gap-2 mb-2 inset-shadow-sm/50",>
         <i data-feather="clipboard"></i>
         <h2 class="text-lg font-semibold">Plan / Terapia</h2>
       </div>
@@ -72,6 +76,16 @@
       <h3 class="mt-4 font-medium">Preparación</h3>
       <ul id="plan-preparacion" class="list-disc list-inside text-slate-300"></ul>
     </section>
+
+<!-- INICIO DIA -->
+    <section id="inicio-dia" class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md">
+  <div class="flex items-center gap-2 mb-2">
+    <i data-feather="sunrise"></i>
+    <h2 class="text-lg font-semibold">Inicio del día</h2>
+  </div>
+  <!-- Contenedor donde app.js inyectará el contenido de data/inicio_dia.json -->
+  <div id="inicio-dia" class="grid gap-4"></div>
+</section>
 
     <!-- LABORATORIO -->
     <section id="lab" class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md">
@@ -81,6 +95,16 @@
       </div>
       <div id="lab-resultados" class="mt-3 grid md:grid-cols-2 gap-6"></div>
     </section>
+
+    <!-- PROTOCOLO -->
+    <section id="protocolo-alimentacion" class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md">
+  <div class="flex items-center gap-2 mb-2">
+    <i data-feather="target"></i>
+    <h2 class="text-lg font-semibold">Protocolo de Alimentación</h2>
+  </div>
+  <div id="protocolo-alimentacion-content" class="grid gap-4"></div>
+</section>
+
 
     <!-- NUTRICIÓN -->
     <section id="nutricion" class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md">

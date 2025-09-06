@@ -1,0 +1,30 @@
+{
+  "alimentacion": [
+    "Prioriza proteína en cada comida",
+    "Incluye fibra: verduras y fruta",
+    "Planifica compras para la semana"
+  ],
+  "acondicionamiento": [
+    "Dormir 7-8h",
+    "10k pasos/día como base",
+    "Respiración nasal en cardio suave"
+  ],
+  "grasas": [
+    "Si estás haciendo ejercicio, las grasas buenas te benefician mucho para esculpir el cuerpo.",
+    "Ejemplos: aceite de pescado, aceite de oliva extra, almendras, nuez de la india, crema de cacahuate y crema de almendras natural."
+  ],
+  "carbohidratos": [
+    "Los carbohidratos que ayudan a mantener una buena musculatura incluyen quinoa, arroz integral, hojuelas de avena, cereales integrales, camote/batata (no en dulce) y cuscús."
+  ],
+  "proteinas": [
+    "Las súper proteínas para esculpir el cuerpo son: atún, huevos, pavo, pollo, tilapia, legumbres, queso cottage, carne roja magra, leguminosas y pescados en general."
+  ],
+  "agua": [
+    "Tomar entre 4 y 5 litros de agua al día.",
+    "Facilita el transporte de nutrientes, vitaminas y minerales por el organismo.",
+    "Activa enzimas esenciales para suministrar energía al cuerpo.",
+    "Favorece la eliminación de impurezas y toxinas.",
+    "Lubrica y da soporte estructural a tejidos y articulaciones.",
+    "Regula la temperatura corporal: durante el ejercicio, el 75% de la energía se disipa en forma de calor."
+  ]
+}
