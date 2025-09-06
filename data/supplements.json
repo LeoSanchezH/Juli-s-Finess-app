@@ -1,0 +1,7 @@
+{
+  "oxidantes": ["Eutirox", "Metformina", "Ashwagandha + Magnesio"],
+  "thermo_oxidacion": ["Clembuterol", "Carnitina", "Ashwagandha + Aldactone"],
+  "pre_entreno": ["Cafeína"],
+  "mid_entreno": ["Electrolitos"],
+  "post_entreno": ["Proteína whey", "Creatina"]
+}

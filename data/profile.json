@@ -1,0 +1,11 @@
+{
+  "peso_inicial": 78.5,
+  "peso_actual": 77.2,
+  "medidas": {
+    "brazos": 32,
+    "abdomen_superior": 88,
+    "abdomen_inferior": 94,
+    "piernas": 56
+  },
+  "fecha_inicio": "2025-09-01"
+}

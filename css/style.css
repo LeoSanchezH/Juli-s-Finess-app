@@ -1,0 +1,100 @@
+/* styles.css – Tailwind build output (ejemplo inspirado en fitness-astro-template) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom Theme Overrides ===== */
+
+:root {
+  --color-primary: 14 165 233;   /* sky-500 */
+  --color-secondary: 34 197 94;  /* green-500 */
+  --color-accent: 244 114 182;   /* pink-400 */
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold tracking-tight text-slate-50;
+}
+
+p {
+  @apply text-slate-300 leading-relaxed;
+}
+
+/* ====== Layout Containers ====== */
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section {
+  @apply py-12;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-md;
+}
+
+/* ====== Buttons ====== */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium bg-sky-500 text-slate-900 hover:bg-sky-400 transition-colors;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium bg-green-500 text-white hover:bg-green-400 transition-colors;
+}
+
+/* ====== Navigation ====== */
+.nav-link {
+  @apply text-sm font-medium text-slate-300 hover:text-sky-400 transition-colors;
+}
+
+/* ====== Grid & Utility Enhancements ====== */
+.grid-2 {
+  @apply grid md:grid-cols-2 gap-6;
+}
+.grid-3 {
+  @apply grid md:grid-cols-3 gap-6;
+}
+.grid-4 {
+  @apply grid md:grid-cols-4 gap-6;
+}
+
+/* ====== Profile Section ====== */
+.profile-label {
+  @apply text-slate-400 text-sm;
+}
+.profile-value {
+  @apply font-semibold text-slate-50;
+}
+
+/* ====== Nutrition Cards ====== */
+.meal-card {
+  @apply rounded-xl border border-slate-800 bg-slate-800/60 p-4;
+}
+.meal-card h3 {
+  @apply font-medium mb-2;
+}
+.meal-card ul li {
+  @apply text-sm text-slate-300;
+}
+
+/* ====== Routines ====== */
+.routine-day {
+  @apply rounded-xl border border-slate-800 bg-slate-800/60 p-4;
+}
+.routine-day h3 {
+  @apply font-medium mb-2 capitalize;
+}
+
+/* ====== Tips ====== */
+.tip-list li {
+  @apply list-disc list-inside text-sm text-slate-300;
+}
+
+/* ====== Footer ====== */
+footer {
+  @apply py-10 text-center text-xs text-slate-500;
+}

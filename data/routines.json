@@ -1,0 +1,60 @@
+{
+"ciclo_cardio": "Calentamiento 5' + HIIT 15' + Enfriamiento 5'",
+"semanal": {
+"lunes": [
+{"titulo": "LEGS DÍA 1 – Activación de glúteo medio", "descripcion": "Banded lateral kick", "series_reps": "3 sets x 15 pasos", "observaciones": "Enfocado en glúteo medio"},
+{"titulo": "Hip Thrust barra libre", "series_reps": "4 sets 15,12,10,8 + drop set", "observaciones": "Carga progresiva"},
+{"titulo": "Abductores máquina", "series_reps": "5 sets 15,12,10,8,8", "observaciones": "Carga progresiva"},
+{"titulo": "Patada de glúteo en polea (cruzado)", "series_reps": "5 sets 15,12,10,8,8", "observaciones": "Carga progresiva"},
+{"titulo": "Tijera búlgara en Smith", "series_reps": "4 sets 15,12,10,8"},
+{"titulo": "Hiperextensión en banco (glúteo)", "series_reps": "4 sets 10–12 reps", "observaciones": "Trabaja glúteo mayor, isquiotibiales y aductores"},
+{"titulo": "Leg extension máquina", "series_reps": "4 sets 10–12 reps pesadas al fallo"}
+],
+"martes": [
+{"titulo": "Espalda – Jalón al frente agarre T", "series_reps": "4 sets 15,12,10 + drop set"},
+{"titulo": "Remo máquina iso‑lateral (Hammer)", "series_reps": "4 sets 15,12,10,10"},
+{"titulo": "Pullover en polea alta", "series_reps": "4 sets 15,12,10 + FST‑7 en la última"},
+{"titulo": "Remo en polea sentada", "series_reps": "4 sets 15,12,10 + FST‑7 en la última"},
+{"titulo": "Hombro – Press en polea", "series_reps": "4 x 15"},
+{"titulo": "Posterior máquina iso‑lateral (Hammer)", "series_reps": "4 x 15"},
+{"titulo": "Elevación lateral mancuernas (sentado)", "series_reps": "4 x 15"},
+{"titulo": "Nota", "descripcion": "Tren superior frecuencia 2; pasos muy ligeros"}
+],
+"miercoles": [
+{"titulo": "LEGS DÍA 3 – Activación glúteo medio", "descripcion": "Banded lateral kick", "series_reps": "3 sets x 15 pasos"},
+{"titulo": "Máquina abductores", "series_reps": "4 sets 15,12,10 + drop set", "observaciones": "Fortalece glúteo medio/menor y TFL"},
+{"titulo": "Peso muerto con barra en banco step (profundo)", "series_reps": "4 sets 12,12,10,10"},
+{"titulo": "Femoral acostado máquina", "series_reps": "4 sets 12,12,10,10"},
+{"titulo": "Peso muerto sumo (pesado)", "series_reps": "4 sets 12,12,10,10", "observaciones": "Glúteos, isquios, espalda"},
+{"titulo": "Hip Thrust en Smith machine", "series_reps": "4 sets 12,12,10 + drop set"},
+{"titulo": "Zancada con mancuerna", "series_reps": "4 sets x 20 reps"},
+{"titulo": "Banco romano – Hipertensión (pesado)", "series_reps": "4 sets 12,12,10,10"},
+{"titulo": "Sentadilla en Smith (pierna abierta, profunda)", "series_reps": "4 sets 12,12,10,10"}
+],
+"jueves": [
+{"titulo": "(Repite tren superior) Espalda/Hombro", "descripcion": "Frecuencia 2 – pasos muy ligeros"},
+{"titulo": "Espalda – Jalón al frente agarre T", "series_reps": "4 sets 15,12,10 + drop set"},
+{"titulo": "Remo máquina iso‑lateral (Hammer)", "series_reps": "4 sets 15,12,10,10"},
+{"titulo": "Pullover en polea alta", "series_reps": "4 sets 15,12,10 + FST‑7 en la última"},
+{"titulo": "Remo en polea sentada", "series_reps": "4 sets 15,12,10 + FST‑7 en la última"},
+{"titulo": "Hombro – Press en polea", "series_reps": "4 x 15"},
+{"titulo": "Posterior máquina iso‑lateral (Hammer)", "series_reps": "4 x 15"},
+{"titulo": "Elevación lateral mancuernas (sentado)", "series_reps": "4 x 15"}
+],
+"viernes": [
+{"titulo": "WORKOUT LEGS DÍA 5 – Prensa máquina (pesado)", "series_reps": "4 sets x 12 reps", "observaciones": "Incrementar peso entre series"},
+{"titulo": "Hip Thrust barra libre", "series_reps": "3 sets 12,10,10 + FST‑7"},
+{"titulo": "Caminatas / Desplantes con barra", "series_reps": "4 sets x 20 pasos"},
+{"titulo": "Abductores máquina", "series_reps": "4 sets 12,12,10,10", "observaciones": "Carga progresiva"},
+{"titulo": "Patada de glúteo diagonal en polea", "series_reps": "4 sets 12,12,10,10", "observaciones": "Glúteo mayor/medio/menor"},
+{"titulo": "Femoral sentado máquina", "series_reps": "4 sets 12,12,10,10", "observaciones": "Carga progresiva"}
+],
+"sabado": [
+{"titulo": "Opcional – Tren superior ligero o movilidad/core"}
+],
+"domingo": [
+{"titulo": "Cardio x1", "series_reps": "45 min", "observaciones": "Zona aeróbica suave"}
+]
+},
+"final_cardio": "5' caminata + estiramientos 10'"
+}

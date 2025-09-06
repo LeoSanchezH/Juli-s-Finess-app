@@ -1,0 +1,21 @@
+{
+  "comidas": [
+    {"id": "comida1", "titulo": "Desayuno", "items": ["Huevos", "Avena", "Fruta"]},
+    {"id": "comida2", "titulo": "Snack 1 (coctel_2)", "items": ["Yogur griego", "Nueces"]},
+    {"id": "comida3", "titulo": "Almuerzo (coctel_3)", "items": ["Pollo", "Arroz integral", "Ensalada"]},
+    {"id": "comida4", "titulo": "Snack 2 (coctel_4)", "items": ["Batido proteína"]},
+    {"id": "comida5", "titulo": "Cena (coctel_5)", "items": ["Pescado", "Quinua", "Verduras"]}
+  ],
+  "ciclo_pre_digestivo": "Infusión digestiva 20 min antes de comidas principales.",
+  "agua": "2.0 L diarios (ajustar por actividad)",
+  "alimentacion": [
+    "Prioriza proteína en cada comida",
+    "Incluye fibra: verduras y fruta",
+    "Planifica compras para la semana"
+  ],
+  "acondicionamiento": [
+    "Dormir 7-8h",
+    "10k pasos/día como base",
+    "Respiración nasal en cardio suave"
+  ]
+}
